@@ -1,0 +1,39 @@
+@page "/"
+@using MudBlazor
+
+<MudText Typo="Typo.h5" Class="mb-4">Início</MudText>
+
+<MudGrid>
+    <MudItem xs="12" sm="4">
+        <MudPaper Class="d-flex flex-column pa-4" Style="background-color: #ef5350;">
+            <MudIcon Icon="@Icons.Material.Filled.AttachMoney" Color="Color.Default" Size="Size.Large" />
+            <MudText Typo="Typo.h4" Class="mt-2">R$ 0,00</MudText>
+            <MudText>Saldo Atual</MudText>
+            <MudButton Variant="Variant.Text" Color="Color.Default" Class="mt-2">Veja Detalhes</MudButton>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="12" sm="4">
+        <MudPaper Class="d-flex flex-column pa-4" Style="background-color: #42a5f5;">
+            <MudIcon Icon="@Icons.Material.Filled.Description" Color="Color.Default" Size="Size.Large" />
+            <MudText Typo="Typo.h4" Class="mt-2">0</MudText>
+            <MudText>Consultas Realizadas</MudText>
+            <MudButton Variant="Variant.Text" Color="Color.Default" Class="mt-2">Veja Detalhes</MudButton>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="12" sm="4">
+        <MudPaper Class="d-flex flex-column pa-4" Style="background-color: #ffa726;">
+            <MudIcon Icon="@Icons.Material.Filled.Warning" Color="Color.Default" Size="Size.Large" />
+            <MudText Typo="Typo.h4" Class="mt-2">0</MudText>
+            <MudText>Alertas Informativos</MudText>
+            <MudButton Variant="Variant.Text" Color="Color.Default" Class="mt-2">Veja Detalhes</MudButton>
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+<MudFab Color="Color.Success" 
+        StartIcon="@Icons.Custom.Brands.WhatsApp" 
+        Style="position: fixed; bottom: 24px; right: 24px;"
+        Href="https://wa.me/seunumero" 
+        Target="_blank" />
